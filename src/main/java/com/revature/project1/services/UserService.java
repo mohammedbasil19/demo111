@@ -6,10 +6,10 @@ import java.util.List;
 import java.util.Optional;
 
 public interface UserService {
-    public void registerUser ();
+    public void registerUser (User user);
     public Optional<User> login(User user);
     public List<User> getUser();
-    public boolean existUser ();
+    public boolean existUser (int userId);
 
 
 }
